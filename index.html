@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=ZCOOL+KuaiLe&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shojumaru&family=ZCOOL+KuaiLe&display=swap');
+        
+
+        body{
+            margin: 0px;
+        }
+        #container{
+            width:1512px;
+            height:588px;
+           
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+
+        }
+        #container>img{
+            width:100%;
+            /* height:588px; */
+            scale: crop;
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+            width:1319px;
+            
+            position: absolute;
+            left:88px;
+            top: 27px;
+        }
+        .logo{
+            display: flex;
+            /* align-items: center; */
+        }
+        .logo>img{
+            width:106px;
+        }
+        .logo>p{
+            font-family: ZCOOL KuaiLe;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: center;
+            margin-top:50px;
+            color:#FFFFFF;
+
+        }
+        .section{
+            width: 537px;
+            height: 52px;
+            background-color: #191818;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 24px 0px 24px;
+            margin-top: 40px;
+        }
+        .section>p{
+            font-family: ZCOOL KuaiLe;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            color:#FFFFFF;
+            padding: 16px 0px;
+            /* margin: 0px 0px; */
+
+        }
+        .wallet{
+
+            width: 127px;
+            height: 38px;
+            top: 48px;
+            left: 695px;
+            padding: 0px 0px 0px 0px;
+            gap: 6.18px;
+            border-radius: 16px;
+            opacity: 0px;
+            background-color: #ED0137;
+            margin-top: 48px;
+            
+        }
+        .wallet>p{
+            color: #FFFFFF;
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 18px;
+            text-align: center;
+
+
+
+        }
+        .mid_text{
+            position: absolute;
+            width:1262px;
+            top: 270px;
+            color:#FFFFFF;
+            text-align: center;
+            font-family: Shojumaru;
+            font-size: 45px;
+            font-weight: 400;
+            line-height: 53.55px;
+            text-align: center;
+            left:123px;
+            
+        }
+        #second{
+            width:1512px;
+            
+            display: flex;
+            margin: auto;
+            background-color: #191818;
+        }
+        .left{
+            width:717px;
+        }
+        .right{
+            width:795px;
+
+        }
+        .left>p:nth-child(1){
+            margin-top: 83px;
+            font-family: Shojumaru;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 52.36px;
+            text-align: center;
+            color:#ED0137;
+
+        }
+        .left>p:nth-child(2){
+            width:551px;
+            font-family: ZCOOL KuaiLe;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28.56px;
+            text-align: left;
+            margin-left: 166px;
+            color:#FFFCFD;
+
+        }
+        .doc{
+            width:179px;
+            background-color: #D51B46;
+            color:#FFFFFF;
+            font-family: ZCOOL KuaiLe;
+            font-size: 20.03px;
+            font-weight: 400;
+            line-height: 20.03px;
+            text-align: left;
+            border-radius: 22px;
+            padding: 17.03px 0px;
+            text-align: center;
+            margin-left: 166px;
+
+        }
+        .doc>span{
+            width:16px;
+            height:16px;
+            margin-left: 11.35px;
+        }
+        .right>img{
+            width:100%;
+        }
+        #third{
+            /* opacity: 71%; */
+            position: relative;
+        }
+        #third>img{
+            width: 1512px;
+            height: 716px;
+            gap: 0px;
+            opacity: 10%;
+            background-color: black;
+
+        }
+        #third>p{
+            width: 282px;
+            height: 52px;
+            position: absolute;
+
+            top: 64px;
+            left: 613px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Shojumaru;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 52.36px;
+            text-align: left;
+            color:#ED0137;
+            
+        }
+        .images{
+            position: absolute;
+            top:228px;
+            left:161px;
+            width:1159.1px;
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: repeat(4,237px);
+        }
+        .images>div{
+            border:2px solid #ED0137;
+            width:100%;
+            height:349px;
+            border-radius: 13.17px;
+        }
+        .images img{
+            width:100%;
+            height: 100%;
+            border-radius: 13.17px;
+            
+            
+        }
+        #fourth{
+            display: flex;
+            width:1512px;
+            margin: auto;
+            
+            background-color: #191818;
+        }
+        #fourth>div:nth-child(1){
+            height:503px;
+            width:503px;
+            margin-left: 86px;
+            margin-top: 86px;
+        }
+        #fourth img{
+            width:100%;
+            height:100%;
+        }
+        #boxes{
+            width:578px;
+            margin-left: 80px;
+        }
+        #boxes>p{
+            font-family: Shojumaru;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 52.36px;
+            text-align: center;
+            color: #ED0137;
+
+        }
+        #boxes>div{
+            margin-top: 16px;
+        }
+        .ques{
+            width:100%;
+            height:77px;
+            border:1px solid #ED0137;
+            display: flex;
+            justify-content: space-between;
+            color: #FFFFFF;
+            border-radius: 20px;
+            padding: 0px 34.03px 0px 38px;
+
+        }
+        .ques>p{
+            font-family: Shojumaru;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26.48px;
+            text-align: left;
+
+        }
+        
+        .ques_4{
+            width:100%;
+            /* padding: 0px 34.03px 0px 38px; */
+            border: 1px solid #ED0137;
+            border-radius: 20px;
+            
+            
+
+        }
+        .ques_4>div:nth-child(1){
+            width: 100%;
+            display: flex;
+            
+            justify-content: space-between;
+            padding: 0px 34.03px 0px 38px;
+            
+        }
+        .ques_4 p{
+            
+            font-family: Shojumaru;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26.48px;
+            text-align: left;
+            color: #FFFFFF;
+
+        }
+        .ques_4_2{
+            width:534px;
+            color:#EEEEEE;
+            background-color: #191818;
+            font-family: ZCOOL KuaiLe;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25.56px;
+            text-align: left;
+            padding: 16px 22px 21px 22px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="https://s3-alpha-sig.figma.com/img/894b/df6e/56b90bbef82ad188765f40d12a46caef?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=U0pPaOMWXR-t72pP3ftgjHJXWtponYsJrenQMv37s4za-g12WmsVx462srUk-VxD8hYPdllQsMQNwL-5l8gdFfYKkIJN8BXmdRgw8sC~WGGVDhLa-lNqS8gu5wSL9JuBwqlowKRSop5T2-52ouVY7JKQwn60O4ep5ui~Iwzp9oJ9RqAzvCuuSuyaB9WnIVauKab6Wn6She-aR7YM2yGgsdsxI8ew~dKEJTQOlfr1fXJkbEoxsk7F9CTgzobgvxEoOSL-yNdvL7Z8p83kFFDPgMbY4MeP7q6Sq4jetVcjVMyYai6AARWuygeEWX~wAc5j5S9NKUYyLcR1Jlf0Mw4t5w__" alt="">
+        <div id="navbar">
+            <div class="logo">
+                <img src="https://s3-alpha-sig.figma.com/img/79e0/db14/6de61e6b7e512045a7cc5fab1681c6dc?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cpsJ9ujNNmUxLskfs8GDymYzW08fZbPn4MpECcoiM7MzoPM1sX74jPoZaz0Jc-x9e6trrl4SgYckZ8ASbS2GryqzTstLgcQdiGR~PjwNjuvwhdkf1qVyFTNoFbXVm6Mu7wOBW5iv~Xiq8~GcRx9Ut-2CHs7s5uqZGup5LqYvrSuYoC-dBSLEZNedJqqi1WZmRvQRNLYtvWQarHdnpazCqwDwGP0yiDR7M7ipkW6u-xlY5KqsI7~JRcvHfmtYbpCycCn2Gji2z8Q57R0VB68DJ14KqqRb8w0NTd0VUW4ZHgS78IoTJ2tPCGtNbuGQejRjJqxBYaA1zSIJLoMwsljoKQ__" alt="">
+                <p>Saviour</p>
+            </div>
+            <div class="section">
+                <p>Home</p>
+                <p>IDO</p>
+                <p>Tokenomics</p>
+                <p>Roadmap</p>
+                <p>Coming Soon</p>
+                
+            </div>
+            <div class="wallet">
+                <p>Connect Wallet</p>
+            </div>
+
+        </div>
+
+        <p class="mid_text">Where Blockchain Heroes Thrive, Rescuing Dreams, Elevating Fortunes.</p>
+        
+    </div>
+    <div id="second">
+        <div class="left">
+            <p>Introduction</p>
+            <p>We've all been in the mud once, and now we've decided to fight it out. 
+                Pay tribute to those pioneers of WEB3 and the warriors who dedicated their love to the blockchain. Save the lucky ones alive, join us to save the future! 
+                Our mission is to empower everyone to share wealth and succeed. 
+                <span>read more...</span>
+            </p>
+            <div class="doc">Documents <span>v</span></div>
+        </div>
+        <div class="right">
+            <img src="https://s3-alpha-sig.figma.com/img/72d9/2d64/713f95c34c945a62844515044f63fcd4?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dy6gWAVwYliawleJchb7RBisKJjz-~g1x5ZQXX494TEl0ccOk3KSgnf9hGEvLfSHX4~EyQKPn07jB0Lp-YEh3qBdOXQsUfDP3HM3a~HAbVQ7GDjb4LbxygWHDfTIn9lScZyrBIcv6yphV9PpqLwM9HEBtPpI9dFLdlDU~5T2ImvCU~OI4Nh7vI6fgslwJlLTpjkmoF2zU3VFP-XeHNlbuwQmpDZI8lgIwzEc~dB9EaxEKRv~MBy1aS3XstcjmWS~IfrZvVH1J7rMTEkcNxwmR77fE-XcKgQAxFThgPLipp8bDZwQDMteW90zDSbP6ne9TxCo15dv6oUZFEiNlSPDLA__" alt="">
+        </div>
+
+    </div>
+    <div id="third">
+        <img src="https://s3-alpha-sig.figma.com/img/7fb8/c9c7/2e63edc105c3925cfa651946f437c2fd?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pAGxyyrb1oJ0D8VmYEwIuaaJ7VDqdALNGT4PGHE0nVODxcf57LqgD-n5qAfVJ2OuyUQDu7NZyXXx-0Q5Z0cra055u1FKDKhM3p72i9D2pw3~jEGZX31MPbmdipH~YJC5gIHmswbiLpkV2sgldRN4E7sgdK5kACSJBTzjfOVMzCJINoKFeA1~YBbrJJlAa3aVPi1NxjU1JfdvF1jON1RaCM4A-0wCOXBnOuj75vIwp9BsN6GINmM4on0C2aKUJ1R60BOd7hasaciyTeW0HLP5pYkWZ6c1n2Aaej4oPaeNBbsW6SC5Rhps1huvml3FD3PRYTDw1rnSNdBwpyWSyzu79Q__" alt="">
+        <p>Road Map</p>
+        <div class="images">
+            <div>
+                <img src="https://s3-alpha-sig.figma.com/img/4b01/5d0d/f2954eaf00df1cee6eb3039a08679aa7?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JHvMMdL0Ow9Jc0Krr3OnLhZhv-RLd8gqlQnw7n19J4kKJz2W6UvSRvX~FrIUKz7tIKEM75xJi5mbgPwFv~6Zxw3pGiX1o6yn2cXoduZiC1YU3FhJQlrFfR2hIl65FH5MLVya4OYhKAuEDomExgmY3fsdxn7gKkHE0unECBXZkxrw9klDFioQ9hg30MlHuPqSh7~PFmf~MwNR8HN9XHi2QYRoruab-QWVMpUppFeqIfunqnsrx2OFXyJ0Txrdf6FXBUyIKOZYHG20ZhVqAbW77~0QryhHTYycC6Eu7p9C0hKZCb-36c2LRqEXiR-juaaPvVw0eWoguBnthDjN-NIWYA__" alt="">
+            </div>
+            <div>
+                <img src="https://s3-alpha-sig.figma.com/img/aa29/8bb9/151666f4ac7fae86b6b63f7e97472d61?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZgePVMhSJ4MQH1dh5BI68y82azR5VDL15KAqIi-1alB5roTpIvEh0WyPQgHKlHBmq38Zq714lwYsy66lC3ciP9DlZIJjcwhz7SQrnOhjSDqfw2zu5xja1AWKgAOQdmBPjw~Az9geChW7x8H6p4hcbUEujwDy~HsbwUV3UPv6LPfIcsTmb7apzejYfEEdXhwG7Dd9jRlrzNOB6EI0zfkxDJD9MfYf5RzNeO1eBbQzG406ot-dXqUYRwCaQbTbpqtS9aB~5Dk-ntCaREdwj3nKHKrAipK13EpCrBhBG3Y3pjFZuzbXGZGP~cF3FQ64AWA2sQUImdaiutLDmo2sxIEz4A__" alt="">
+            </div>
+            <div>
+                <img src="https://s3-alpha-sig.figma.com/img/6c61/fbae/ca9bd789f6b5490e4ac71b41b57d2d90?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TfSJ3AsG1H4EifNJFCRPXgLAk5rGhmfPr1Xs2N3ACI-5EMvMb2oxUkr0Z7QTDkbHHxuAQyQW0LvBQRsTYAwJExV2dttfHWK0gaaY1wlrh9emCcIFea7KCX2yq~QPstjygbIHvbXf26fXEsN3DFiYpI~LYE1gkQ0UJYSJaxMBkm107y6W-fxUxbroXnn4FOxbmMGydT8wnMkATX5OE15pni0N-nW1a1~V9CYaia~oVU8OLTbb0RVyUGhkquGhxMmBO3gbYSBjru6Z4J69K5Y-pwxq6s-3Y-4-SxneJ18EcDK8d4aQ~GjO3J6aTsQz9jVYtBKu3wRCXz8wgqF5NAc6zQ__" alt="">
+            </div>
+            <div>
+                <img src="https://s3-alpha-sig.figma.com/img/e792/f455/d02fe23b0b95b2461d5ab0db33cfb4b7?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DHWw0J7V1eJo8TJOH6s6BKg2BvVD4t6TPsu9VNymX2ircKl2uLC~QRQNIWnv7iuKwrQ31~GmZ7auJ~qfqwdEznp2K7TkAYGGPFTT1pmL6bkbxXymN9gD88bjEZm81oJy0kSzqq8asGdAXguHCeRNMafacAqfOHIIytITXz8SRLo1C~WtCibYe6GbQWVSRYdeSZEMlZQdBqqD8uYZBu86wQ3TZ5xRG5lO8LiDLrnJvfPHwZ8ZUaReSngzcNCX2MqP7VJ2xRpq0exDOTYEyk9dn1tb0N-99br79vb27UvrRT0cg4YPYo3k8W7frmtFL0wNZeYKGlR~FIKI92bnpL7jdQ__" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div id="fourth">
+        <div>
+            <img src="https://s3-alpha-sig.figma.com/img/7624/956b/bb5893d955ab92e34ab86102a42d6d23?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HgV7vT5TT5nd2W8dk5fNRnM3OPBgds9BiAc7m-NIVeGxFgTTtA7WWQ5ZMckoDDCDhGteotOk-OWZwcLCIDFzVheYJmOyp5~51Fcw3UAQ4z3-xxLScEb9~Q30wiPNmNC8YFHzUXIhB4fbkO9HYJT5GOHc4xfYuks9r2oacXg0wp8EP2G5I0DGGmaQGFpOUFOFgIm1~2meb966vEb5iil6nsV6DPofAYjwd~BZfxT0Keo4vF81Awkae4rqMbR94Zf0zOMFHTC-Pwau3dMlcHGrhKQ98mUljm6YoDx0uQ6zBOcjiu3F94tQom97V8YmNSh3oB3OBwg8TAiBbjFFNNMMdg__" alt="">
+        </div>
+        <div id="boxes">
+            <p>FAQ</p>
+            <div class="ques">
+                <p>1</p>
+                <p>Why choose "Savior"?</p>
+                <p>v</p>
+            </div>
+            <div class="ques">
+                <p>2</p>
+                <p>Why is the IDO duration so long?</p>
+                <p>v</p>
+            </div>
+            <div class="ques">
+                <p>3</p>
+                <p>When will trading go live?</p>
+                <p>v</p>
+            </div>
+            <div class="ques_4">
+                <div class="">
+                    <p>4</p>
+                    <p>When will trading go live?</p>
+                    <p>v</p>
+                </div>
+                <div class="ques_4_2">
+                    After the IDO concludes, you can claim the tokens on our official website.
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+   
+</body>
+</html>
